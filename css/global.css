@@ -4,11 +4,13 @@
 }
 body{
     background-color: rgb(225, 225, 225);
+    
 }
 
 .content{
     padding: 1rem;
     background-color: white;
+    grid-template-columns: 1fr 1fr;
 }
 
 @media screen and (min-width: 320px) {
