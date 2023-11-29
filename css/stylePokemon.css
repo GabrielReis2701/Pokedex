@@ -5,8 +5,7 @@
 button .blocoPokemon{
     display: grid;
     grid-template-columns: 1fr;
-    display: grid;
-    grid-template-columns: 1fr;
+    
 }
 .normal  {
     background-color:#a6a877;
@@ -107,6 +106,7 @@ button .blocoPokemon{
     color:rgb(255, 255, 255);
     text-transform: capitalize;
     text-align: left;
+    margin-bottom: .25rem;
 }
 .pokemons .detail .imgList{
     max-width: 100%;
@@ -136,5 +136,5 @@ button .blocoPokemon{
     text-align: right;
     color:#000;
     opacity: .4;
-    
+    font-size: .625rem;
 }
