@@ -4,32 +4,41 @@
 }
 body{
     background-color: rgb(225, 225, 225);
-    
+    grid-template-columns: 1fr 1fr;
 }
 
 .content{
+    display: flex;
     padding: 1rem;
     background-color: white;
-    grid-template-columns: 1fr 1fr;
+    -ms-layout-grid: 50;
 }
 
 @media screen and (min-width: 320px) {
     .pokemons{
+        grid-template-columns: 1fr;
+    }
+    .content{
         grid-template-columns: 1fr 1fr;
     }
     
 }
 @media screen and (min-width: 576px) {
     .pokemons{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .content{
+        grid-template-columns: 1fr 1fr;
     }
     
 }
 @media screen and (min-width: 982px) {
     .pokemons{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    
+    .content{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .pagination{

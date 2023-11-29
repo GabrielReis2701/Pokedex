@@ -1,9 +1,12 @@
 .pokemons{
+
+    list-style: none;
+}
+button .blocoPokemon{
     display: grid;
     grid-template-columns: 1fr;
-    list-style: none;
-    padding:0;
-    margin:0;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 .normal  {
     background-color:#a6a877;
@@ -59,36 +62,69 @@
 .fairy   {
     background-color:#f9aec7;
 }
-
+.stat{
+    text-transform: capitalize;
+    list-style: none;
+}
+.detailStatus{
+    padding-bottom: 1rem;
+    padding: 1rem;
+    background-color: #c6ccd8;
+    border-radius: 1rem;
+    max-width: 96%;
+}
+.detailsG{
+    padding: 5rem;
+    max-width: 100%;
+    height: 200px;
+    position: fixed;
+}
+.imgDetails{
+    max-width: 100%;
+    height: 80px;
+}
 .pokemon{
     display: flex;
     margin: .5rem;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 1rem;
     color: #fff;
     flex-direction: column;
+
 }
-.pokemons .name {
+.pokemonD{
+    display: flex;
+    margin: .5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: #fff;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+}
+.name {
     font-style: oblique;
     color:rgb(255, 255, 255);
     text-transform: capitalize;
+    text-align: left;
 }
-.pokemons .detail img{
+.pokemons .detail .imgList{
     max-width: 100%;
-    height: 70px;
+    height: 60px;
 }
-.pokemon .detail{
+
+.detail{
     flex-direction: row;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.pokemon .detail .types{
+.detail .types{
     padding: 0;
-    margin: 0;
+    margin: 10px;
     list-style: none;
 }
-.pokemon .detail .types .type {
+.detail .types .type {
     padding: .25rem .5rem;
     margin: .25rem 0 ;
     color: #fff;
@@ -100,4 +136,5 @@
     text-align: right;
     color:#000;
     opacity: .4;
+    
 }
